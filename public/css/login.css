@@ -70,7 +70,7 @@ p {
     min-height: 85vh;
 }
 
-#content #form {
+#form {
     max-width: 500px;
     background-color: rgba(33,37,41, 0.5);
     border: 1px solid var(--orange-color);
@@ -78,15 +78,15 @@ p {
     padding: 40px 40px;
 }
 
-#content #form .form-control {
+#form .form-control {
     border-radius: 20px;
 }
 
-#content #form .form-control:focus {
+#form .form-control:focus {
     box-shadow: 0 0 10px var(--orange-color), 0 0 40px var(--orange-color, 0 0 80px var(--orange-color));
 }
 
-#content #form a:hover {
+#form a:hover {
     color: var(--orange-dark);
     text-decoration: underline !important;
 }
