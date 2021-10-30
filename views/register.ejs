@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="css/register.css">
+  <title>Sign up - Play Traditional Game</title>
+</head>
+
+<body>
+  <main id="main" class="bg">
+    <%- include('partials/navbar') %>
+    <div id="content" class="container d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col">
+          <form id="form" class="needs-validation text-center mx-auto mt-5" action="/register" method="post">
+            <p class="h5 text-orange mb-5">Create a new account</p>
+            <div class="mb-3">
+              <label for="username" class="form-label text-white">New username</label>
+              <input type="text" class="form-control text-orange text-center" id="username" name="username"
+                placeholder="Enter a new username" aria-describedby="username">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label text-white">New password</label>
+              <input type="password" class="form-control text-center" id="password" name="password"
+                placeholder="Enter a new password">
+            </div>
+            <div class="form-check text-orange text-start">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label small mb-3" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback small">
+                You must agree before submitting.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-warning fw-bold text-uppercase">submit</button><br>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer') %>
+  </main>
+
+  <%- include('partials/script') %>
+</body>
+
+</html>
