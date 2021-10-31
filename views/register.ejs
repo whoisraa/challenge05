@@ -18,7 +18,7 @@
             <div class="has-validation mb-3">
               <label for="username" class="form-label text-white">New username</label>
               <input type="text" class="form-control text-orange text-center" id="username" name="username"
-                placeholder="Enter a new username" aria-describedby="username" required>
+                placeholder="Enter a new username" aria-describedby="username" tabindex="1" required>
               <div class="invalid-feedback text-orange">
                 Please choose a username
               </div>
@@ -26,13 +26,13 @@
             <div class="has-validation mb-3">
               <label for="password" class="form-label text-white">New password</label>
               <input type="password" class="form-control text-center" id="password" name="password"
-                placeholder="Enter a new password" required>
+                placeholder="Enter a new password" minlength="6" tabindex="2" required>
               <div class="invalid-feedback text-orange">
                 Please choose a password
               </div>
             </div>
             <div class="form-check text-orange text-start">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" tabindex="3" required>
               <label class="form-check-label small mb-3" for="invalidCheck">
                 Agree to terms and conditions
               </label>
@@ -40,7 +40,7 @@
                 You must agree before submitting.
               </div>
             </div>
-            <button type="submit" class="btn btn-warning fw-bold text-uppercase">submit</button><br>
+            <button type="submit" class="btn btn-warning fw-bold text-uppercase" tabindex="4">submit</button>
           </form>
         </div>
       </div>
