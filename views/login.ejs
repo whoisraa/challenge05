@@ -14,19 +14,19 @@
       <div class="row">
         <div class="col">
           <form id="form" class="needs-validation mx-auto mt-5" action="/login" method="post">
-            <p class="h5 text-orange mb-5">Please login using your account</p>
+            <p class="h5 text-orange mb-5">Please log in using your account</p>
             <div class="mb-3">
               <label for="username" class="form-label text-white">Username</label>
               <input type="text" class="form-control text-orange text-center" id="username" name="username"
-                placeholder="Enter your username" aria-describedby="username">
+                placeholder="Enter your username" aria-describedby="username" tabindex="1"required>
             </div>
             <div class="mb-3">
               <label for="password" class="form-label text-white">Password</label>
               <input type="password" class="form-control text-center" id="password" name="password"
-                placeholder="Enter your password">
+                placeholder="Enter your password" tabindex="2" required>
             </div>
-            <button type="submit" class="btn btn-warning fw-bold text-uppercase">submit</button><br>
-            <a class="text-orange small text-decoration-none" href="/register">Don't have account yet? Create one</a>
+            <button type="submit" class="btn btn-warning fw-bold text-uppercase" tabindex="3">submit</button><br>
+            <a class="text-orange small text-decoration-none" href="/register" tabindex="4">Don't have account yet? Create one</a>
           </form>
         </div>
       </div>
