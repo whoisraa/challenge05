@@ -17,20 +17,8 @@ router.get('/register', (req, res) => {
 });
 
 router.get('/game', (req, res) => {
-    res.render('game');
-});
-
-router.get('/internalError', (req, res) => {
-    internalError;
-});
-
-router.use((err, req, res, next) => {
-    console.error(err);
-    res.status(500).render('500');
-});
-
-router.use((req, res) => {
-    res.status(404).render('404');
+    const name = req.query.name || 'PLAYER 1';
+    res.render('game', {name});
 });
 
 module.exports = router;
