@@ -8,7 +8,7 @@
 4. Run **server** in command line : `npm start`
 5. Open this URL on your browser : `http://localhost:3500`
 6. The app ran finally
-- note: try to unknown routes (ex: `localhost:3000/agadfgh` or `localhost:3000/9456`) and you would be redirected to **404 page**
+- note: try to go to unknown routes (ex: `localhost:3000/agadfgh` or `localhost:3000/9456`) and you would be redirected to **404 page**
 
 ### Used packages 
 
