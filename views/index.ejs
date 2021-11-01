@@ -3,6 +3,8 @@
 
 <head>
   <%- include('partials/head') %>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Play Traditional Game</title>
 </head>
 
 <body>
@@ -13,7 +15,7 @@
         <div class="col">
           <p class="hero display-2 text-white fw-bold text-uppercase">play traditional game</p>
           <p class="subhero h4 text-white my-md-4">Experience new traditional game play</p>
-          <a href="game.html" class="btn btn-warning btn-md text-uppercase fw-bold mx-auto my-md-4">trial</a>
+          <a href="/game" class="btn btn-warning btn-md text-uppercase fw-bold mx-auto my-md-4">play now</a>
         </div>
       </div>
       <div class="row">
@@ -292,7 +294,36 @@
     <%- include('partials/footer') %>
   </section>
 
+  <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+    <i class="bi bi-arrow-up-circle-fill h1"></i>
+  </button>
+
   <%- include('partials/script') %>
+  <script>
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 :root {
     --orange-color: #f9b23e;
     --orange-dark: #c78e32;
-    --text-white-75: rgba(255, 255, 255, 0.75);
+    --orange-light: #ffca2c;
 }
 
 html,
@@ -48,12 +48,11 @@ p {
     background-color: var(--orange-color);
 }
 
-.bg::before {
-    content: '';
-    position: absolute;
-    min-height: 500px;
-    height: 100%;
-    width: 100%;
+.btn-warning:hover {
+    box-shadow: 0 0 10px var(--orange-light), 0 0 40px var(--orange-light, 0 0 80px var(--orange-light));
+}
+
+.bg {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,29 +60,28 @@ p {
     z-index: -1;
 }
 
-.img1::before {
-    background-image: url("assets/main-bg.jpg");
-    height: 100vh;
+.img1 {
+    background-image: url("../assets/main-bg.jpg");
 }
 
-.img2::before {
-    background-image: url("assets/the-games-bg.jpg");
+.img2 {
+    background-image: url("../assets/the-games-bg.jpg");
 }
 
-.img3::before {
-    background-image: url("assets/features.jpg");
+.img3 {
+    background-image: url("../assets/features.jpg");
 }
 
-.img4::before {
-    background-image: url("assets/requirements.png");
+.img4 {
+    background-image: url("../assets/requirements.png");
 }
 
-.img5::before {
-    background-image: url("assets/top-score-bg.png");
+.img5 {
+    background-image: url("../assets/top-score-bg.png");
 }
 
-.img6::before {
-    background-image: url("assets/newsletter.png");
+.img6 {
+    background-image: url("../assets/newsletter.png");
 }
 
 /* ---------- sections ---------- */
@@ -199,12 +197,16 @@ p {
 /* subscribe */
 
 #content-6 {
-    min-height: 80vh;
+    min-height: 85vh;
 }
 
 #content-6 .email {
     color: var(--orange-color);
     width: 20rem !important;
+}
+
+#content-6 .email:focus {
+    box-shadow: 0 0 10px var(--orange-color), 0 0 40px var(--orange-color, 0 0 60px var(--orange-color));
 }
 
 #content-6 .email-label {
@@ -216,5 +218,13 @@ p {
 }
 
 #content-footer {
-    min-height: 20vh;
+    min-height: 15vh;
+}
+
+#btn-back-to-top {
+    color: var(--orange-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
