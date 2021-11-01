@@ -294,36 +294,12 @@
     <%- include('partials/footer') %>
   </section>
 
-  <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+  <button type="button" class="btn btn-floating btn-lg shadow-none" id="btn-back-to-top">
     <i class="bi bi-arrow-up-circle-fill h1"></i>
   </button>
 
   <%- include('partials/script') %>
-  <script>
-    let mybutton = document.getElementById("btn-back-to-top");
-
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    mybutton.addEventListener("click", backToTop);
-
-    function backToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
+  <script src="js/back-to-top.js"></script>
 </body>
 
 </html>
