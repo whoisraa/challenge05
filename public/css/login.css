@@ -37,9 +37,12 @@ p {
     letter-spacing: 0.2rem;
 }
 
-.border-warning,
 .text-orange {
     color: var(--orange-color);
+}
+
+.border-orange {
+    border-color: var(--orange-color);
 }
 
 .btn-warning {

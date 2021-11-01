@@ -94,6 +94,11 @@ body {
     width: 150px;
 }
 
+.btn-play:focus {
+    box-shadow: none;
+    border: none;
+}
+
 .player:hover,
 .player:focus {
     height: 150px;
@@ -131,6 +136,11 @@ body {
 
 #refresh {
     margin-top: 15vh;
+}
+
+#refresh:focus {
+    box-shadow: none;
+    border: none;
 }
 
 #refresh:hover {
