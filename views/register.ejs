@@ -13,34 +13,35 @@
     <div id="content" class="container d-flex flex-column justify-content-center">
       <div class="row">
         <div class="col">
-          <form id="form" class="needs-validation text-center mx-auto mt-5" action="/register" method="post">
+          <form id="form" class="text-center mx-auto mt-5" action="/register" method="post">
             <p class="h5 text-orange mb-5">Create a new account</p>
-            <div class="has-validation mb-3">
+            <div class="mb-3">
               <label for="username" class="form-label text-white">New username</label>
-              <input type="text" class="form-control text-orange text-center" id="username" name="username"
-                placeholder="Enter a new username" aria-describedby="username" tabindex="1" required>
-              <div class="invalid-feedback text-orange">
-                Please choose a username
+              <input type="text" class="form-control text-orange text-center border-0 bg-dark" id="username"
+                name="username" placeholder="Enter a new username" aria-describedby="username" minlength="3"
+                oninvalid="this.setCustomValidity('Oh come on, just fill this properly')" tabindex="1" required>
+              <div class="text-start text-secondary">
+                <label for="username" class="small mb-2"><span class="text-danger">*</span> Min length 3
+                  characters</label>
               </div>
             </div>
-            <div class="has-validation mb-3">
+            <div class="mb-2">
               <label for="password" class="form-label text-white">New password</label>
-              <input type="password" class="form-control text-center" id="password" name="password"
-                placeholder="Enter a new password" minlength="6" tabindex="2" required>
-              <div class="invalid-feedback text-orange">
-                Please choose a password
+              <input type="password" class="form-control text-center border-0 bg-dark" id="password" name="password"
+                placeholder="Enter a new password" minlength="6"
+                oninvalid="this.setCustomValidity('You care about your account, don\'t you?')" tabindex="2" required>
+              <div class="text-start text-secondary">
+                <label for="password" class="small"><span class="text-danger">*</span> Min length 6 characters</label>
               </div>
             </div>
             <div class="form-check text-orange text-start">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" tabindex="3" required>
-              <label class="form-check-label small mb-3" for="invalidCheck">
+              <input class="form-check-input border-1 border-warning" type="checkbox" value="" id="agreement"
+                oninvalid="this.setCustomValidity('Hey, you need to agree this')" tabindex="3" required>
+              <label class="form-check-label small mb-2" for="agreement">
                 Agree to terms and conditions
               </label>
-              <div class="invalid-feedback text-orange small">
-                You must agree before submitting.
-              </div>
             </div>
-            <button type="submit" class="btn btn-warning fw-bold text-uppercase" tabindex="4">submit</button>
+            <button type="submit" class="btn btn-warning fw-bold text-uppercase" tabindex="4">sign up</button>
           </form>
         </div>
       </div>
