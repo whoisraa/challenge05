@@ -1,5 +1,11 @@
 # 🌾 Binar Challenge 5 Submission 
 
+## 📋 Prequisites
+### You'll need these programs installed on your computer
+- [Git](https://git-scm.com/downloads)
+- [NodeJS](https://nodejs.org/en/download/)
+- [NPM](https://www.npmjs.com/) (usually comes with NodeJS)
+
 ## 🚀 Follow these steps to run the app 
 
 1. Clone the repository 
