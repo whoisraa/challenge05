@@ -2,9 +2,9 @@
 
 ## 📋 Prequisites
 ### You'll need these programs installed on your computer
-- [Git](https://git-scm.com/downloads)
-- [NodeJS](https://nodejs.org/en/download/)
-- [NPM](https://www.npmjs.com/) (usually comes with NodeJS)
+- [Git](https://git-scm.com/downloads) - Version Control
+- [NodeJS](https://nodejs.org/en/download/) - Back-end JavaScript Runtime Environment
+- [NPM](https://www.npmjs.com/) - Node Package Manager (usually comes with NodeJS)
 
 ## 🚀 Follow these steps to run the app 
 
